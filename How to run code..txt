@@ -1,0 +1,2 @@
+1.Dowload extensions 'Live Server' in vs code
+2.Open a HTML file and right-click on the editor and click on "Open with Live Serve"r or click "Go Live" should appear at the bottom, in the status bar.

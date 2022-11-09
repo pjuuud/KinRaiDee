@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #CFC43F;
+    margin: 0px;
+}
+
+/* content of web */
+.container {
+    width: 800px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 62px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h1 span {
+    color: #CFC43F;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+    margin: 25px;
+}
+
+.add {
+    font-weight: 700;
+}
+
+/* The button (background) */
+button {
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    background-color: #CFC43F;
+    border-radius: 20px;
+    color: black;
+    border: 2px solid black;
+    padding: 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    border: 2px solid #CFC43F;
+  }
+
+input {
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 300px;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+/* The popup (background) */
+.popUp, .popUp-checked{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* pop Content */
+.popUp-content, .check-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.popUp-content {
+    width: 50%;
+    height: 70%;
+    overflow-y: scroll !important;
+}
+
+.check-content {
+    width: 50%;
+}
+
+/* head text of the menu */
+.popUp-content #head {
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #CFC43F;
+    margin: auto;
+}
+
+/* text in popup menu and check */
+#list, #menuChecked {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+  
+  /* The Close Button */
+#close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+#close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

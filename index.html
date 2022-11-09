@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinRaiDee</title>
+    <link href="kinRaiDee.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1><span>Kin</span>RaiDee</h1>
+        <p>วันนี้จะกินอะไรดีน้า?</p>
+        <!-- random menu  -->
+        <button id="random" >สุ่มเลย!</button>
+        <h2 id="menuName">______________</h2>  
+        <!-- list of menu -->
+        <button id="listMenu">เมนูอาหาร</button>
+        <p class="add">เพิ่มเมนูอาหาร</p>
+        <!-- add menu -->
+        <input onfocus="this.value=''" type="text" id="add">
+        <button id="addMenu">เพิ่ม</button>
+        <!-- pop up the menu-->
+        <div id="myPopUp" class="popUp">
+            <div class="popUp-content">
+                <span id="close">&times;</span>
+                <p id="head"></p>
+                <p id="list"></p>
+            </div>
+        </div>
+        <!-- pop up checked message-->
+        <div id="myPopUp-checked" class="popUp-checked">
+            <div class="check-content">
+                <span id="close">&times;</span>
+                <p id="menuChecked"></p>
+            </div>
+        </div>
+    </div>
+    <!-- file javascript -->
+    <script src="kinRaiDee.js"></script>
+</body>
+</html>
