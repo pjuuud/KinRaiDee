@@ -56,6 +56,8 @@ let addFood = function() {
     }
     if (mode == 0) {
         document.getElementById("menuChecked").innerHTML =  "เพิ่มเมนู '" + newfood + "' สำเร็จ";
+        //add new line ;-; for display update menu
+        document.getElementById("list").innerHTML +=  newfood + "</br>";
         //add food
         listOfMenu.push(newfood);
     }
